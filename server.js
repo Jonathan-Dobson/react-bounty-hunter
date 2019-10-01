@@ -4,6 +4,11 @@ const express = require('express')
 const app = express()
 
 const port = process.env.PORT || 3004
+const MONGO_USER = process.env.MONGO_USER
+const MONGO_PASS = process.env.MONGO_PASS
+const MONGO_HOST = process.env.MONGO_HOST
+const MONGO_DB = 'bountyHunter'
+
 // const uuid = require('uuid/v4')
 const mongoose = require('mongoose');
 app.use('/bounty', express.json())
